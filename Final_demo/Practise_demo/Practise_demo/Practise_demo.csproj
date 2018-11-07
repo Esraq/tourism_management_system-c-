@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F59D238-15A7-44F7-8E23-44572EA7A496}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Practise_demo</RootNamespace>
+    <AssemblyName>Practise_demo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAL.cs" />
+    <Compile Include="BL.cs" />
+    <Compile Include="DAL.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.cs">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17.Designer.cs">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21.Designer.cs">
+      <DependentUpon>Form21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23.Designer.cs">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form25.Designer.cs">
+      <DependentUpon>Form25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form26.Designer.cs">
+      <DependentUpon>Form26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form27.Designer.cs">
+      <DependentUpon>Form27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form28.Designer.cs">
+      <DependentUpon>Form28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29.Designer.cs">
+      <DependentUpon>Form29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form30.Designer.cs">
+      <DependentUpon>Form30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form31.Designer.cs">
+      <DependentUpon>Form31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form32.Designer.cs">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form33.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form33.Designer.cs">
+      <DependentUpon>Form33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form34.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form34.Designer.cs">
+      <DependentUpon>Form34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form35.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form35.Designer.cs">
+      <DependentUpon>Form35.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form37.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form37.Designer.cs">
+      <DependentUpon>Form37.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form39.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form39.Designer.cs">
+      <DependentUpon>Form39.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form40.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form40.Designer.cs">
+      <DependentUpon>Form40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form42.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form42.Designer.cs">
+      <DependentUpon>Form42.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form44.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form44.Designer.cs">
+      <DependentUpon>Form44.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form45.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form45.Designer.cs">
+      <DependentUpon>Form45.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form47.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form47.Designer.cs">
+      <DependentUpon>Form47.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form49.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form49.Designer.cs">
+      <DependentUpon>Form49.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form50.Designer.cs">
+      <DependentUpon>Form50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form51.Designer.cs">
+      <DependentUpon>Form51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form54.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form54.Designer.cs">
+      <DependentUpon>Form54.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form55.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form55.Designer.cs">
+      <DependentUpon>Form55.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form56.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form56.Designer.cs">
+      <DependentUpon>Form56.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form57.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form57.Designer.cs">
+      <DependentUpon>Form57.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form58.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form58.Designer.cs">
+      <DependentUpon>Form58.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17.resx">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21.resx">
+      <DependentUpon>Form21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23.resx">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form25.resx">
+      <DependentUpon>Form25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form26.resx">
+      <DependentUpon>Form26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form27.resx">
+      <DependentUpon>Form27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form28.resx">
+      <DependentUpon>Form28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29.resx">
+      <DependentUpon>Form29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form30.resx">
+      <DependentUpon>Form30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form31.resx">
+      <DependentUpon>Form31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form32.resx">
+      <DependentUpon>Form32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form33.resx">
+      <DependentUpon>Form33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form34.resx">
+      <DependentUpon>Form34.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form35.resx">
+      <DependentUpon>Form35.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form37.resx">
+      <DependentUpon>Form37.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form39.resx">
+      <DependentUpon>Form39.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form40.resx">
+      <DependentUpon>Form40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form42.resx">
+      <DependentUpon>Form42.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form44.resx">
+      <DependentUpon>Form44.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form45.resx">
+      <DependentUpon>Form45.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form47.resx">
+      <DependentUpon>Form47.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form49.resx">
+      <DependentUpon>Form49.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form50.resx">
+      <DependentUpon>Form50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form51.resx">
+      <DependentUpon>Form51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form54.resx">
+      <DependentUpon>Form54.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form55.resx">
+      <DependentUpon>Form55.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form56.resx">
+      <DependentUpon>Form56.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form57.resx">
+      <DependentUpon>Form57.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form58.resx">
+      <DependentUpon>Form58.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bangladesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hello-bangladesh %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sixty-Dome-Mosque-Bangladesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sundorban.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sundorbon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shat_Gombuj_Mosque1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sixty-Dome-Mosque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shat_Gombuj_Mosque11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sixty-Dome-Mosque1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sundorban1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sundorbon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paharpur1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gokul Medh %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gokul Medh %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mahasthangarh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault-400x268.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sangu_River_from_Bandarban_Town_18_Nov_2004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuvolong-Waterfalls.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaflong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham_ham_rajkandi_srimangal_sylhet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghurbo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdbnew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\see4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syllll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skylab.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sky%3babe%3b.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctgstone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milestone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctgpack.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runnn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rajjj.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bestov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cox glance.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cox 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\himfinal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\packageback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bugg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
